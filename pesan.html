@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>INPUT PEMESANAN TIKET</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pesan.css">
+</head>
+
+<body>
+
+  <audio id="bg-music" loop>
+      <source src="inthejungle.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div id="form-container">
+    <h2>INPUT PEMESANAN TIKET</h2>
+
+    <div class="rekening-info">
+      <strong>Transfer ke Rekening:</strong><br>
+      BCA - 1234567890 a.n. Lokawisata Indah
+    </div>
+
+    <form id="form">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="whatsapp">Nomor WhatsApp:</label>
+      <input type="tel" id="whatsapp" name="whatsapp" required>
+
+      <label for="paket">Paket Wisata:</label>
+      <select id="paket" name="paket" required>
+        <option value="">-- Pilih Paket --</option>
+        <option value="Paket Fun">Paket Fun</option>
+        <option value="Paket Ecofun (1-5 Orang)">Paket Ecofun (1-5 Orang)</option>
+        <option value="Paket Ecofun (6-15 Orang)">Paket Ecofun (6-15 Orang)</option>
+        <option value="Paket Ecofun (16-20 Orang)">Paket Ecofun (16-20 Orang)</option>
+        <option value="Paket Cassafun 1 (1-5 Orang)">Paket Cassafun 1 (1-5 Orang)</option>
+        <option value="Paket Cassafun 1 (6-15 Orang)">Paket Cassafun 1 (6-15 Orang)</option>
+        <option value="Paket Cassafun 1 (16-20 Orang)">Paket Cassafun 1 (16-20 Orang)</option>
+        <option value="Paket Cassafun 2 (1-5 Orang)">Paket Cassafun 2 (1-5 Orang)</option>
+        <option value="Paket Cassafun 2 (6-15 Orang)">Paket Cassafun 2 (6-15 Orang)</option>
+        <option value="Paket Cassafun 2 (16-20 Orang)</">Paket Cassafun 2 (16-20 Orang)</option>
+        <option value="Paket Lokabudaya (1-5 Orang)">Paket Lokabudaya (1-5 Orang)</option>
+        <option value="Paket Lokabudaya (6-15 Orang)">Paket Lokabudaya (6-15 Orang)</option>
+        <option value="Paket Lokabudaya (16-20 Orang)">Paket Lokabudaya (16-20 Orang)</option>
+        <option value="Paket Lokamini (16-20 Orang)">Paket Lokamini (16-20 Orang)</option>
+        <option value="Paket Lokamini (20-30 Orang)">Paket Lokamini (20-30 Orang)</option>
+      </select>
+
+      <label for="tanggal">Tanggal Kunjungan:</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+
+      <label for="foto">Bukti Pembayaran:</label>
+      <input type="file" id="foto" name="foto" accept="image/*" required>
+
+      <input type="submit" value="Pesan">
+    </form>
+
+    <div id="hasil"></div>
+  </div>
+
+  <div id="footer">
+    Created by Wildan Hidayaturrohman
+  </div>
+
+  <script src="pesan.js"></script>
+</body>
+
+</html>
